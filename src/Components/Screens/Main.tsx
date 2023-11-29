@@ -1,6 +1,5 @@
 import styled from "styled-components";
-import SectionTitle from "../UI/SectionTitle";
-
+import Section from "../UI/Section";
 
 
 const MainStyled = styled.main`
@@ -19,16 +18,21 @@ const MainStyled = styled.main`
 function Main() {
   return (
     <MainStyled>
-      <section>
-        <SectionTitle>
-          Histories
-        </SectionTitle>
-      </section>
-      <section>
-        <SectionTitle>
-          Messages 
-        </SectionTitle>
-      </section>
+      <Section 
+        title="Histories"
+        linkText="add new"
+        href="#"
+      >
+        
+      </Section>
+
+      <Section 
+        title="Messages"
+        linkText="write now"
+        href="#"
+      >
+
+      </Section>
     </MainStyled>
   )
 }
