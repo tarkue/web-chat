@@ -4,9 +4,11 @@ import MessagesIcon from "./messages.svg?react"
 import SendIcon from "./send.svg?react"
 import SettingsIcon from "./settings.svg?react"
 import UserIcon from "./user.svg?react"
+import SearchIcon from "./search.svg?react"
 
 
 export {
     ArrowIcon, EmojiIcon, MessagesIcon, 
-    SendIcon, SettingsIcon, UserIcon
+    SendIcon, SettingsIcon, UserIcon, 
+    SearchIcon
 }

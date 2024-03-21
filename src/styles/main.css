@@ -66,3 +66,26 @@ button {
 #root { 
     height: 100%;
 }
+
+.hidden {
+    opacity: 0;
+}
+
+.searchClicked span {
+    color: transparent;
+}
+.searchClicked svg {
+    transform: translateX(-130px);
+    opacity: 0;
+}
+
+@media (max-width: 370px) {
+    .searchClicked svg {
+        transform: translateX(-100px);
+    }
+}
+@media (max-width: 300px) {
+    .searchClicked svg {
+        transform: translateX(-70px);
+    }
+}

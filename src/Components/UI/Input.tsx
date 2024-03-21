@@ -1,12 +1,17 @@
 import styled from "styled-components"
-import { InputHTMLAttributes } from "react"
+import { InputHTMLAttributes, RefObject } from "react"
+import { FC } from "react"
 
+
+interface CustomInputProps extends InputHTMLAttributes<HTMLInputElement> {
+  ref?: RefObject<HTMLInputElement>
+}
 
 const CustomInput = styled.input`
   box-sizing: border-box;
 
   width: 100%;
-  padding: 12px 18px;
+  padding: 10px 18px;
 
   line-height: 26px;
   font-size: 16px;
@@ -30,7 +35,7 @@ const CustomInput = styled.input`
 `
 
 
-const Input = (props: InputHTMLAttributes<HTMLInputElement>) => (
+const Input: FC<CustomInputProps> = (props) => (
   <CustomInput {...props}/>
 )
 

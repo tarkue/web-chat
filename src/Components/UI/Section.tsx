@@ -7,7 +7,10 @@ const Wrapper = styled.div`
   align-items: center;
   justify-content: space-between;
 
-  width: 100%;
+  width: calc(100% - 40px);
+  
+  margin: 0 auto;
+  margin-bottom: 20px;
 `
 
 const StyledLink = styled(Link)`
@@ -15,7 +18,7 @@ const StyledLink = styled(Link)`
   text-decoration: none;
 
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 399;
 `
 
 interface LayoutProps  { 
